@@ -1,4 +1,4 @@
-![Criando interfaces gráficas com Python (PySide6) e Qt 6](./docs/images/readme/pyside6-cover-1600x840.webp "Criando interfaces gráficas com Python (PySide6) e Qt 6")
+![Criando interfaces gráficas com Python (PySide6) e Qt 6](./docs/images/index/pyside6-cover-1600x840.webp "Criando interfaces gráficas com Python (PySide6) e Qt 6")
 
 <br>
 
