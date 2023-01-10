@@ -1,0 +1,21 @@
+# docker-compose up (docker-compose down).
+# podman-compose up (podman-compose down)
+
+services:
+  db:
+    image: mysql:8.0.31
+    container_name: MySQL
+    restart: on-failure
+    # Não utilizar em produção.
+    command: --default-authentication-plugin=mysql_native_password
+    # Privileged para evitar o erro: '/var/lib/mysql/': Permission denied.
+    privileged: true
+    volumes:
+      - ../database/mysql:/var/lib/mysql
+    ports:
+      - '3306:3306'
+    environment:
+      MYSQL_USER: dbuser
+      MYSQL_PASSWORD: 123456
+      MYSQL_ROOT_PASSWORD: 123456
+      MYSQL_DATABASE: database_name

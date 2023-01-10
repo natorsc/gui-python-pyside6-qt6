@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+  db:
+    image: postgres:12.3-alpine
+    container_name: PostgreSQL
+    restart: on-failure
+    ports:
+      - '5432:5432'
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      # - psql-data:/var/lib/postgresql/data
+      # - ./data/db:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: dbuser
+      POSTGRES_PASSWORD: 123456
+      POSTGRES_DB: database_name
+    # devices:
+    #   - "/dev/ttyUSB0:/dev/ttyUSB0"
+
+# volumes:
+#   psql-data:

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>683</width>
+    <height>384</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Python e Qt 6: PySide6 QTableWidget() ui file</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../../../data/icons/br.com.justcode.Example.png</normaloff>../../../data/icons/br.com.justcode.Example.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>12</number>
+    </property>
+    <property name="leftMargin">
+     <number>12</number>
+    </property>
+    <property name="topMargin">
+     <number>12</number>
+    </property>
+    <property name="rightMargin">
+     <number>12</number>
+    </property>
+    <property name="bottomMargin">
+     <number>12</number>
+    </property>
+    <item>
+     <widget class="QTableWidget" name="tableWidget">
+      <row>
+       <property name="text">
+        <string>1</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>2</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>3</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>4</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>5</string>
+       </property>
+      </row>
+      <column>
+       <property name="text">
+        <string>Cabeçalho 1</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Cabeçalho 2</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Cabeçalho 3</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Cabeçalho 4</string>
+       </property>
+      </column>
+      <item row="0" column="0">
+       <property name="text">
+        <string>Linha: 1 - Coluna: 1</string>
+       </property>
+      </item>
+      <item row="0" column="1">
+       <property name="text">
+        <string>Linha: 1 - Coluna: 3</string>
+       </property>
+      </item>
+      <item row="0" column="2">
+       <property name="text">
+        <string>Linha: 1 - Coluna: 2</string>
+       </property>
+      </item>
+      <item row="0" column="3">
+       <property name="text">
+        <string>Linha: 1 - Coluna: 4</string>
+       </property>
+      </item>
+      <item row="1" column="0">
+       <property name="text">
+        <string>Linha: 2 - Coluna: 1</string>
+       </property>
+      </item>
+      <item row="1" column="1">
+       <property name="text">
+        <string>Linha: 2 - Coluna: 3</string>
+       </property>
+      </item>
+      <item row="1" column="2">
+       <property name="text">
+        <string>Linha: 2 - Coluna: 2</string>
+       </property>
+      </item>
+      <item row="1" column="3">
+       <property name="text">
+        <string>Linha: 2 - Coluna: 4</string>
+       </property>
+      </item>
+      <item row="2" column="0">
+       <property name="text">
+        <string>Linha: 3 - Coluna: 1</string>
+       </property>
+      </item>
+      <item row="2" column="1">
+       <property name="text">
+        <string>Linha: 3 - Coluna: 3</string>
+       </property>
+      </item>
+      <item row="2" column="2">
+       <property name="text">
+        <string>Linha: 3 - Coluna: 2</string>
+       </property>
+      </item>
+      <item row="2" column="3">
+       <property name="text">
+        <string>Linha: 3 - Coluna: 4</string>
+       </property>
+      </item>
+      <item row="3" column="0">
+       <property name="text">
+        <string>Linha: 4- Coluna: 1</string>
+       </property>
+      </item>
+      <item row="3" column="1">
+       <property name="text">
+        <string>Linha: 4 - Coluna: 3</string>
+       </property>
+      </item>
+      <item row="3" column="2">
+       <property name="text">
+        <string>Linha: 4 - Coluna: 2</string>
+       </property>
+      </item>
+      <item row="3" column="3">
+       <property name="text">
+        <string>Linha: 4 - Coluna: 4</string>
+       </property>
+      </item>
+      <item row="4" column="0">
+       <property name="text">
+        <string>Linha: 5 - Coluna: 1</string>
+       </property>
+      </item>
+      <item row="4" column="1">
+       <property name="text">
+        <string>Linha: 5 - Coluna: 3</string>
+       </property>
+      </item>
+      <item row="4" column="2">
+       <property name="text">
+        <string>Linha: 5 - Coluna: 2</string>
+       </property>
+      </item>
+      <item row="4" column="3">
+       <property name="text">
+        <string>Linha: 5 - Coluna: 4</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>683</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_file">
+    <property name="title">
+     <string>Arquivo</string>
+    </property>
+    <addaction name="action_exit"/>
+   </widget>
+   <addaction name="menu_file"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action_exit">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../../data/icons/exit.svg</normaloff>../../../data/icons/exit.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Sair</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

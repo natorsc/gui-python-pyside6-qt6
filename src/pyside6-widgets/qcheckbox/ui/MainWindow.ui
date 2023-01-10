@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>683</width>
+    <height>384</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Python e Qt 6: PySide6 QCheckBox() ui file</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../../../data/icons/br.com.justcode.Example.png</normaloff>../../../data/icons/br.com.justcode.Example.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>12</number>
+    </property>
+    <property name="leftMargin">
+     <number>12</number>
+    </property>
+    <property name="topMargin">
+     <number>12</number>
+    </property>
+    <property name="rightMargin">
+     <number>12</number>
+    </property>
+    <property name="bottomMargin">
+     <number>12</number>
+    </property>
+    <item>
+     <layout class="QVBoxLayout" name="groupbox_vbox_01">
+      <item>
+       <widget class="QGroupBox" name="groupbox_01">
+        <property name="title">
+         <string>Selecione o gênero</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <widget class="QCheckBox" name="male">
+           <property name="text">
+            <string>Masculino</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">button_group_01</string>
+           </attribute>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="female">
+           <property name="text">
+            <string>Feminino</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">button_group_01</string>
+           </attribute>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="groupbox_02_hbox">
+      <item>
+       <widget class="QGroupBox" name="groupbox_02">
+        <property name="title">
+         <string>Aceitar o termo?</string>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <widget class="QCheckBox" name="checkbox_item_yes">
+           <property name="text">
+            <string>Aceitar o termo?</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="groupbox_03_hbox">
+      <item>
+       <widget class="QGroupBox" name="groupbox_03">
+        <property name="title">
+         <string>Selecione os itens</string>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QCheckBox" name="checkbox_item_01">
+           <property name="text">
+            <string>Item 01</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="checkbox_item_02">
+           <property name="text">
+            <string>Item 02</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="checkbox_item_03">
+           <property name="text">
+            <string>Item 03</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>683</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_file">
+    <property name="title">
+     <string>Arquivo</string>
+    </property>
+    <addaction name="action_exit"/>
+   </widget>
+   <addaction name="menu_file"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action_exit">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../../data/icons/exit.svg</normaloff>../../../data/icons/exit.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Sair</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+ <buttongroups>
+  <buttongroup name="button_group_01"/>
+ </buttongroups>
+</ui>

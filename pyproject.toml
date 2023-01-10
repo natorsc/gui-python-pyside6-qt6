@@ -1,0 +1,48 @@
+[tool.poetry]
+name = "gui-python-pyside6-qt6"
+version = "0.1.0"
+description = "Repositório criado para documentar e centralizar conteúdos, dicas, tutoriais e exemplos de código sobre a construção de interfaces com a linguagem de programação Python (PySide6) e o framework gráfico Qt 6."
+authors = ["Renato Cruz <zkpcvm6dz@mozmail.com>"]
+readme = "README.md"
+homepage = "https://pyside6.justcode.com.br/"
+documentation = "https://pyside6.justcode.com.br/"
+repository = "https://github.com/natorsc/gui-python-pyside6-qt6"
+keywords = ["Qt", "Qt 6", "PySide", "PySide6", "Python", "Python 3", "QML", "Kirigami"]
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.12"
+pyside6 = "^6.4.1"
+
+[tool.poetry.group.docs.dependencies]
+sphinx = "^5.3.0"
+sphinx-copybutton = "^0.5.1"
+sphinx-inline-tabs = "^2022.1.2b11"
+sphinxext-opengraph = "^0.7.4"
+sphinx-sitemap = "^2.4.0"
+furo = "^2022.12.7"
+
+
+[tool.poetry.group.dev.dependencies]
+pylint = "^2.15.9"
+autopep8 = "^2.0.1"
+pyinstaller = "^5.7.0"
+pyinstaller-hooks-contrib = "^2022.14"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+classifiers = [
+    "Topic :: Software Development",
+    "Topic :: Desktop Environment",
+    "Topic :: Desktop Environment :: K Desktop Environment (KDE)",
+    "Environment :: X11 Applications :: QT",
+    "Environment :: X11 Applications :: KDE",
+    "Operating System :: Microsoft",
+    "Operating System :: Microsoft :: Windows :: Windows 10",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: MIT License",
+]
+

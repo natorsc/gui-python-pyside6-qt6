@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Type=Application
+Name=Exemplo
+Comment=Criando interfaces gráficas com Python (PySide6) e Qt 6.
+Path=/home/natorsc/Projetos/gui-python-pyside6/src/qmainwindow/
+Icon=br.com.justcode.Example
+Exec=poetry run python MainWindow.py
+Terminal=false
+Categories=Qt;
+Keywords=Exemplo;
