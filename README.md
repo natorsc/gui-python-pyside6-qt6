@@ -56,7 +56,7 @@ Uma das playlist que costumo ouvir quando estou estudando ou "codando" 😁:
 
 Sempre que possível escrevo tutoriais no meu blog pessoal 🚀:
 
-[![Blog](https://img.shields.io/static/v1?label=&message=Blog&color=gray&logoColor=blue&logo=hashnode)](https://blog.codigoninja.dev/ "Ir para o blog.")
+[![Blog](https://img.shields.io/static/v1?label=&message=Blog&color=gray&logoColor=blue&logo=wordpress)](https://justcode.com.br/ "Ir para o blog.")
 
 ---
 
