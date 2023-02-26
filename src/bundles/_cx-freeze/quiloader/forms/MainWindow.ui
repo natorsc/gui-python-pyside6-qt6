@@ -11,11 +11,11 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Python e Qt 6: PySide6 Cx_Freeze ui file</string>
+   <string notr="true">Python e Qt 6: PySide6 Cx_Freeze ui file</string>
   </property>
   <property name="windowIcon">
-   <iconset>
-    <normaloff>../../../data/icons/br.com.justcode.Example.png</normaloff>../../../data/icons/br.com.justcode.Example.png</iconset>
+   <iconset resource="../resources/resources.qrc">
+    <normaloff>:/window/icon</normaloff>:/window/icon</iconset>
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QVBoxLayout" name="verticalLayout">
@@ -80,14 +80,16 @@
   <widget class="QStatusBar" name="statusbar"/>
   <action name="action_exit">
    <property name="icon">
-    <iconset>
-     <normaloff>../../../data/icons/exit.svg</normaloff>../../../data/icons/exit.svg</iconset>
+    <iconset resource="../resources/resources.qrc">
+     <normaloff>:/menu/exit</normaloff>:/menu/exit</iconset>
    </property>
    <property name="text">
     <string>Sair</string>
    </property>
   </action>
  </widget>
- <resources/>
+ <resources>
+  <include location="../resources/resources.qrc"/>
+ </resources>
  <connections/>
 </ui>

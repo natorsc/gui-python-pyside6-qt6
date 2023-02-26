@@ -85,7 +85,7 @@ Obrigado por sua doação, é através dela que conseguimos manter este conteúd
 Para gerar o arquivo de resources:
 
 ```bash
-pyside6-rcc resources_rc.qrc -o resources_rc.py
+pyside6-rcc resources.qrc -o resources_rc.py
 ```
 
 > Posteriormente o arquivo deve ser importado no código.

@@ -1,0 +1,8 @@
+<RCC>
+  <qresource prefix="window">
+    <file alias="icon">icons/br.com.justcode.Example.png</file>
+  </qresource>
+  <qresource prefix="menu">
+    <file alias="exit">icons/exit.svg</file>
+  </qresource>
+</RCC>

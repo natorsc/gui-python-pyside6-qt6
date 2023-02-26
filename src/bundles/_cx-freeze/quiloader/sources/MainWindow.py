@@ -1,51 +1,49 @@
 # -*- coding: utf-8 -*-
-"""Python e Qt 6: PySide6 loadUiType() com Cx_Freeze."""
+"""Python e Qt 6: PySide6 QUiLoader() Cx_Freeze."""
 
 from pathlib import Path
 
-from PySide6 import QtUiTools, QtWidgets
+import resources_rc
+from PySide6 import QtCore, QtUiTools, QtWidgets
 
 BASE_DIR = Path(__file__).resolve().parent
-UI_FILE = str(BASE_DIR.joinpath('MainWindow.ui'))
+ROOT_DIR = Path(__file__).resolve().parent.parent
+UI_FILE = str(ROOT_DIR.joinpath('forms', 'MainWindow.ui'))
 
-UiMainWindow, BaseQMainWindow = QtUiTools.loadUiType(UI_FILE)
 
-
-class MainWindow(BaseQMainWindow, UiMainWindow):
+class MainWindow(QtCore.QObject):
 
     def __init__(self, application):
         super().__init__()
         self.application = application
-        self.setupUi(self)
 
-        self.action_exit.triggered.connect(self.on_action_exit_clicked)
+        loader = QtUiTools.QUiLoader()
+        self.ui = loader.load(UI_FILE)
 
-        self.push_button.clicked.connect(self.on_button_clicked)
+        self.ui.action_exit.triggered.connect(self.on_action_exit_clicked)
 
-    def showEvent(self, event):
-        print(f'Janela aberta: {event}')
-
-    def focusInEvent(self, event):
-        print(f'Janela ganhou foco: {event}')
-
-    def closeEvent(self, event):
-        print(f'Janela fechada: {event}')
+        self.ui.push_button.clicked.connect(self.on_push_button_clicked)
 
     def on_action_exit_clicked(self):
         self.application.quit()
 
-    def on_button_clicked(self, widget):
-        text = self.line_edit.text()
+    def show_window(self):
+        self.ui.show()
+
+    def on_push_button_clicked(self, widget):
+        text = self.ui.line_edit.text()
         if text.split():
-            self.label.setText(text)
+            self.ui.label.setText(text)
         else:
-            self.label.setText(
+            self.ui.label.setText(
                 self.tr('Digite algo no campo de texto ;).')
             )
 
 
 if __name__ == "__main__":
     import sys
+
+    QtCore.QCoreApplication.setAttribute(QtCore.Qt.AA_ShareOpenGLContexts)
 
     APPLICATION_NAME = 'br.com.justcode.Example'
     ORGANIZATION_NAME = APPLICATION_NAME.split('.')[2]
@@ -61,6 +59,8 @@ if __name__ == "__main__":
     elif current_platform == 'linux':
         from os import environ, getenv
 
+        QtCore.QCoreApplication.setAttribute(QtCore.Qt.AA_ShareOpenGLContexts)
+
         XDG_SESSION_TYPE = getenv('XDG_SESSION_TYPE')
         if XDG_SESSION_TYPE == 'wayland':
             environ['QT_QPA_PLATFORM'] = 'wayland'
@@ -74,6 +74,6 @@ if __name__ == "__main__":
     application.setDesktopFileName(f'{APPLICATION_NAME}.desktop')
 
     window = MainWindow(application=application)
-    window.show()
+    window.show_window()
 
     sys.exit(application.exec())

@@ -3,6 +3,7 @@
 
 from pathlib import Path
 
+import resources_rc
 from PySide6 import QtCore, QtGui, QtWidgets
 
 BASE_DIR = Path(__file__).resolve().parent
@@ -34,13 +35,14 @@ class MainWindow(QtWidgets.QMainWindow):
         self.setWindowTitle(
             self.tr('Python e Qt 6: PySide6 signals e slots')
         )
-        self.setWindowIcon(QtGui.QIcon(ICONS['window']))
+        # self.setWindowIcon(QtGui.QIcon(ICONS['window']))
+        self.setWindowIcon(QtGui.QIcon(':/window/icon'))
 
         menu_bar = self.menuBar()
 
         menu_file = menu_bar.addMenu(self.tr('Arquivo'))
         action_exit = QtGui.QAction(
-            QtGui.QIcon(ICONS['exit']), self.tr('Sair'), self
+            QtGui.QIcon(':/menu/exit'), self.tr('Sair'), self
         )
         action_exit.triggered.connect(self.on_action_exit_clicked)
         menu_file.addAction(action_exit)
@@ -68,7 +70,7 @@ class MainWindow(QtWidgets.QMainWindow):
         push_button.setText(
             self.tr('Clique aqui')
         )
-        push_button.clicked.connect(self.on_button_clicked)
+        push_button.clicked.connect(self.on_push_button_clicked)
         vbox.addWidget(push_button)
 
     def showEvent(self, event):
@@ -83,7 +85,7 @@ class MainWindow(QtWidgets.QMainWindow):
     def on_action_exit_clicked(self):
         self.application.quit()
 
-    def on_button_clicked(self, widget):
+    def on_push_button_clicked(self, widget):
         text = self.line_edit.text()
         if text.split():
             self.label.setText(text)
