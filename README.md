@@ -14,7 +14,9 @@
 
 ## 📝 Descrição
 
-Repositório criado para documentar e centralizar conteúdos, dicas, tutoriais e exemplos de código sobre a construção de interfaces com a linguagem de programação Python (PySide6) e o framework gráfico Qt 6
+Repositório criado para documentar e centralizar conteúdos, dicas, tutoriais e exemplos de código sobre a construção de interfaces gráficas com a linguagem de programação Python (PySide6) e o framework Qt 6
+
+---
 
 ## 📚 Documentação
 
@@ -22,7 +24,7 @@ Repositório criado para documentar e centralizar conteúdos, dicas, tutoriais e
 
 Para facilitar a navegação e consulta dos conteúdos contidos neste repositório, a documentação foi criada com [Sphinx](https://www.sphinx-doc.org/en/master/) + [Furo](https://github.com/pradyunsg/furo).
 
-Acesse [https://pyside6.justcode.com.br/](https://pyside6.justcode.com.br/) para poder ver ao conteúdo completo.
+Acesse [https://pyside6.justcode.com.br/](https://pyside6.justcode.com.br/) para ver o conteúdo completo.
 
 ---
 
@@ -50,7 +52,7 @@ Feito com 💙 por [Renato Cruz](https://github.com/natorsc) 🤜🤛 Entre em c
 &emsp;
 [![LinkedIn](https://img.shields.io/static/v1?label=&message=LinkedIn&color=blue&logoColor=white&logo=LinkedIn)](https://www.linkedin.com/in/natorsc "Entre em contato.")
 
-Uma das playlist que costumo ouvir quando estou estudando ou "codando" 😁:
+Uma das playlist que ouço quando estou estudando ou "codando" 😁:
 
 [![Spotify](https://img.shields.io/static/v1?label=&message=Spotify&color=darkgreen&logoColor=white&logo=spotify)](https://open.spotify.com/playlist/1xf3u29puXlnrWO7MsaHL5?si=A-LgwRJXSvOno_e6trpi5w&utm_source=copy-link "Acessar playlist.")
 
@@ -61,6 +63,8 @@ Sempre que possível escrevo tutoriais no meu blog pessoal 🚀:
 ---
 
 ## 💝 Doações
+
+Obrigado por sua doação, é através dela que conseguimos manter este conteúdo 😊.
 
 ### Ko-Fi
 
@@ -106,7 +110,9 @@ Para gerar o arquivo binário da tradução `*.qm`:
 pyside6-lrelease br.com.justcode.Example.ts -qm br.com.justcode.Example.qm
 ```
 
-### Poetry
+---
+
+## Poetry
 
 #### requirements.txt
 

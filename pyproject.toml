@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "gui-python-pyside6-qt6"
 version = "0.1.0"
-description = "Repositório criado para documentar e centralizar conteúdos, dicas, tutoriais e exemplos de código sobre a construção de interfaces com a linguagem de programação Python (PySide6) e o framework gráfico Qt 6."
+description = "Repositório criado para documentar e centralizar conteúdos, dicas, tutoriais e exemplos de código sobre a construção de interfaces gráficas com a linguagem de programação Python (PySide6) e o framework Qt 6."
 authors = ["Renato Cruz <zkpcvm6dz@mozmail.com>"]
 readme = "README.md"
 homepage = "https://pyside6.justcode.com.br/"

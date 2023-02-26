@@ -3,10 +3,10 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-:og:description: Site criado para documentar e centralizar conteúdos, dicas, tutoriais e exemplos de código sobre a construção de interfaces com a linguagem de programação Python (PyGObject) e o framework gráfico Qt 6.
+:og:description: Site Repositório criado para documentar e centralizar conteúdos, dicas, tutoriais e exemplos de código sobre a construção de interfaces gráficas com a linguagem de programação Python (PySide6) e o framework Qt 6.
 
 .. meta::
-   :description: Site criado para documentar e centralizar conteúdos, dicas, tutoriais e exemplos de código sobre a construção de interfaces com a linguagem de programação Python (PyGObject) e o framework gráfico Qt 6.
+   :description: Site Repositório criado para documentar e centralizar conteúdos, dicas, tutoriais e exemplos de código sobre a construção de interfaces gráficas com a linguagem de programação Python (PySide6) e o framework Qt 6.
    :keywords: Qt, Qt 6, PySide, PySide6, Python, Python 3, XML, QML, Kirigami
 
 Criando interfaces gráficas com Python (PySide6) e Qt 6
@@ -17,7 +17,7 @@ Criando interfaces gráficas com Python (PySide6) e Qt 6
 Descrição
 ---------
 
-Site criado para documentar e centralizar conteúdos, dicas, tutoriais e exemplos de código sobre a construção de interfaces gráficas com a linguagem de programação Python (PySide6) e o framework gráfico Qt 6.
+Site Repositório criado para documentar e centralizar conteúdos, dicas, tutoriais e exemplos de código sobre a construção de interfaces gráficas com a linguagem de programação Python (PySide6) e o framework Qt 6.
 
 --------------
 
@@ -28,7 +28,7 @@ Feito com 💙 por `Renato Cruz <https://github.com/natorsc>`__ 🤜🤛 Entre e
 
 |E-mail| |LinkedIn|
 
-Uma das playlist que costumo ouvir quando estou estudando ou "codando" 😁:
+Uma das playlist que ouço quando estou estudando ou "codando" 😁:
 
 |Spotify|
 
@@ -50,7 +50,7 @@ Sempre que possível escrevo tutoriais no meu blog pessoal 🚀:
 Doações
 -------
 
-Obrigado por sua doação é através dela que conseguimos manter este conteúdo 😊.
+Obrigado por sua doação, é através dela que conseguimos manter este conteúdo 😊.
 
 Ko-Fi
 ^^^^^
